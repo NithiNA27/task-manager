@@ -16,7 +16,7 @@ function Login() {
         try {
 
             const response = await axios.post(
-                "https://task-manager-4bn7.onrender.com/api/auth/login",
+                "https://task-manager-4bn7.onrender.com",
                 {
                     email,
                     password
