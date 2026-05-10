@@ -16,7 +16,7 @@ function Register() {
         try {
 
             const response = await axios.post(
-                "https://task-manager-4bn7.onrender.com/api/auth/register",
+                "https://task-manager-4bn7.onrender.com",
                 {
                     email,
                     password
