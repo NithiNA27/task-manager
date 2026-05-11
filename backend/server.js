@@ -26,7 +26,7 @@ app.use(cors({
     credentials: true
 }));
 
-app.options("/*", cors())
+app.use(cors());
 
 const User = require("./models/User")
 app.use("/api/auth", authRoutes)
