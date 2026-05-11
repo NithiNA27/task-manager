@@ -26,7 +26,7 @@ function Dashboard() {
         try {
 
             const response = await axios.get(
-                    "https://task-manager-g6yj.onrender.com/api/tasks",                {
+                    "https://task-manager-g1sx.onrender.com/api/tasks",                {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -48,7 +48,7 @@ function Dashboard() {
         try {
 
             await axios.post(
-                "https://task-manager-g6yj.onrender.com/api/tasks",
+                "https://task-manager-g1sx.onrender.com/api/tasks",
                 {
                     title
                 },
@@ -74,7 +74,7 @@ function Dashboard() {
         try {
 
             await axios.delete(
-                `https://task-manager-g6yj.onrender.com/api/tasks/${id}`,
+                `https://task-manager-g1sx.onrender.com/api/tasks/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -95,7 +95,7 @@ function Dashboard() {
         try {
 
             await axios.put(
-                `https://task-manager-g6yj.onrender.com/api/tasks/${task._id}`,
+                `hhttps://task-manager-g1sx.onrender.com/api/tasks/${task._id}`,
                 {
                     completed: !task.completed
                 },
