@@ -95,7 +95,7 @@ function Dashboard() {
         try {
 
             await axios.put(
-                `hhttps://task-manager-g1sx.onrender.com/api/tasks/${task._id}`,
+                `https://task-manager-g1sx.onrender.com/api/tasks/${task._id}`,
                 {
                     completed: !task.completed
                 },
