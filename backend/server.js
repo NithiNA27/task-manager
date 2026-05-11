@@ -17,7 +17,13 @@ const PORT = process.env.PORT || 5000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://task-manager-chi-mauve-44.vercel.app"
+    ],
+    credentials: true
+}))
 const User = require("./models/User")
 app.use("/api/auth", authRoutes)
 app.use("/api/tasks", taskRoutes)
